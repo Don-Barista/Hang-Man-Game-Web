@@ -5,14 +5,20 @@
     <title>HangMan Game</title>
     <style>
     /*
-    This isnt working
+    @font-face wasn't working because I forgot the hyphen :)
     */
-      @fontface {
-        font-family: 'BloodLust';
-        src: url('BloodLust.ttf') format('truetype'),
-        url('BloodLust.woff2') format('woff2'),
-        url('BloodLust.woff') format('woff');
+      @font-face {
+        font-family: 'Murderer';
+        src: url('font-family/youmurdererbb_reg.ttf') format('truetype');
       }
+
+      @font-face {
+        font-family: 'BloodLust';
+        src: url('font-family/BloodLust.ttf') format('truetype'),
+        url('font-family/BloodLust.woff') format('woff'),
+        url('font-family/BloodLust.woff2') format('woff2');
+      }
+
       h1 {
         text-align: center;
       }
@@ -24,27 +30,39 @@
         border-radius: 20px;
         margin: auto;
         width: 95%;
+        background-color: rgba(45, 45, 45, 0.2);
+        box-shadow: 10px 10px 10px rgba(26,19,19,1);
       }
-      /*
-      I want this box to cover the whole screen
-      */
+
       .game-box {
         border: 1px solid black;
         border-radius: 20px;
-        background-color: rgba(255, 0, 0, 0.5);
+        background-color: rgba(45, 45, 45, 0.2);
         margin: auto;
         margin-top: 25px;
         width: 95%;
         height: 575px;
+        box-shadow: 10px 10px 10px rgba(26,19,19,1);
+      }
+
+      h1 {
+        font-family: Murderer, cursive;
+      }
+
+      div {
+        font-family: BloodLust, cursive;
       }
 
     </style>
   </head>
   <body>
     <div class="title-box">
-      <h1>Hey Man! Want to <span style="font-family: 'Bloodlust'">Hang</span> Man?</h1>
+      <h1>Hey Man! Want to Hang Man?</h1>
     </div>
     <div class ="game-box">
+<!--
+Here is where the game will be played
+-->
       <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at accumsan dui. In nec luctus libero, ac tristique magna. Praesent vel felis accumsan, scelerisque diam imperdiet, condimentum nunc. Ut id efficitur enim, ac dictum nisl. Sed risus ligula, sagittis vitae augue vitae, luctus vestibulum mauris. Cras blandit sapien gravida nisi condimentum, efficitur maximus diam varius. Nullam odio nunc, faucibus id fermentum vitae, molestie sed odio. Donec quis lorem in enim luctus ultricies. Nullam quis ex et quam blandit maximus.
 
